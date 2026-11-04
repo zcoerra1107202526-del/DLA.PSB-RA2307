@@ -92,17 +92,19 @@ tr:hover {
 
 /* Footer styling */
 footer {
+    width: 100%;
     background: #1f4e79;
     color: white;
     text-align: center;
     padding: 15px;
     margin-top: 20px;
-    font-size: 15px;
+    font-size: 16px;
     font-weight: bold;
 }
 
 footer p {
     margin: 5px;
+    text-align: center;
 }
 
 /* Mobile responsive design */
