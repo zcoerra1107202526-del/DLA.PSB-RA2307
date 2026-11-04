@@ -1,60 +1,50 @@
 
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Student Records</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <header>
-        <h1>Student Records</h1>
-        <p id="count"></p>
-    </header>
+<header>
+    <h1>Student Records</h1>
 
-    <main>
+    <div class="student-info">
+        <h2>Parth Satish Bamgude</h2>
+        <p>Roll No: E12304</p>
+    </div>
 
-        <input
-            type="text"
-            id="searchBox"
-            placeholder="Search by roll no or name..."
-        >
+    <p id="count"></p>
+</header>
 
-        <p id="status"></p>
+<main>
+    <input type="text" id="searchBox"
+    placeholder="Search by roll no or name...">
 
-        <table id="studentTable">
+    <p id="status"></p>
 
-            <thead>
-                <tr>
-                    <th data-key="srNo">Sr No</th>
-                    <th data-key="rollNo">Roll No</th>
-                    <th data-key="name">Student Name</th>
-                    <th data-key="tenth">10th</th>
-                    <th data-key="twelfth">12th</th>
-                    <th data-key="sem1">Sem 1</th>
-                    <th data-key="sem2">Sem 2</th>
-                </tr>
-            </thead>
+    <table id="studentTable">
+        <thead>
+            <tr>
+                <th data-key="srNo">Sr No</th>
+                <th data-key="rollNo">Roll No</th>
+                <th data-key="name">Student Name</th>
+                <th data-key="tenth">10th</th>
+                <th data-key="twelfth">12th</th>
+                <th data-key="sem1">Sem 1</th>
+                <th data-key="sem2">Sem 2</th>
+            </tr>
+        </thead>
 
-            <tbody id="tbody"></tbody>
+        <tbody id="tbody"></tbody>
+    </table>
+</main>
 
-        </table>
-
-    </main>
-
-    <footer>
-        <p>Name: Parth Satish Bamgude</p>
-        <p>Roll No: RA2307</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="script.js"></script>
 
 </body>
-
 </html>
