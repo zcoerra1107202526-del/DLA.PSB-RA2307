@@ -1,1 +1,122 @@
-* { box-sizing: border-box; }   body {   font-family: Arial, sans-serif;   margin: 0;   background: #f4f6f9;   color: #222; }   header {   background: #1f4e79;   color: #fff;   padding: 20px;   text-align: center; } header h1 { margin: 0 0 6px; font-size: 1.6rem; } header p  { margin: 0; font-size: 0.9rem; opacity: 0.9; }   main { max-width: 1000px; margin: 20px auto; padding: 0 12px; }   #searchBox {   width: 100%;   padding: 12px;   font-size: 1rem;   border: 1px solid #bbb;   border-radius: 6px;   margin-bottom: 12px; }   table {   width: 100%;   border-collapse: collapse; * { box-sizing: border-box; }   body {   font-family: Arial, sans-serif;   margin: 0;   background: #f4f6f9;   color: #222; }   header {   background: #1f4e79;   color: #fff;   padding: 20px;   text-align: center; } header h1 { margin: 0 0 6px; font-size: 1.6rem; } header p  { margin: 0; font-size: 0.9rem; opacity: 0.9; }   main { max-width: 1000px; margin: 20px auto; padding: 0 12px; }   #searchBox {   width: 100%;   padding: 12px;   font-size: 1rem;   border: 1px solid #bbb;   border-radius: 6px;   margin-bottom: 12px; }   table {   width: 100%;   border-collapse: collapse; * { box-sizing: border-box; }   body {   font-family: Arial, sans-serif;   margin: 0;   background: #f4f6f9;   color: #222; }   header {   background: #1f4e79;   color: #fff;   padding: 20px;   text-align: center; } header h1 { margin: 0 0 6px; font-size: 1.6rem; } header p  { margin: 0; font-size: 0.9rem; opacity: 0.9; }   main { max-width: 1000px; margin: 20px auto; padding: 0 12px; }   #searchBox {   width: 100%;   padding: 12px;   font-size: 1rem;   border: 1px solid #bbb;   border-radius: 6px;   margin-bottom: 12px; }   table {   width: 100%;   border-collapse: collapse; 
+
+/* Universal styling */
+* {
+    box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f4f6f9;
+    color: #222;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+header {
+    background: #1f4e79;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0 0 6px;
+    font-size: 1.6rem;
+}
+
+header p {
+    margin: 0;
+    font-size: 0.9rem;
+    opacity: 0.9;
+}
+
+/* Main section */
+main {
+    width: 100%;
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 12px;
+    flex: 1;
+}
+
+/* Search box */
+#searchBox {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    margin-bottom: 12px;
+}
+
+/* Table styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+th {
+    background: #1f4e79;
+    color: white;
+    padding: 12px;
+    cursor: pointer;
+    text-align: center;
+}
+
+td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+tr:nth-child(even) {
+    background: #f2f6fa;
+}
+
+tr:hover {
+    background: #e2edf7;
+}
+
+/* Status message */
+#status {
+    color: #d9534f;
+    text-align: center;
+    margin: 10px 0;
+}
+
+/* Footer styling */
+footer {
+    background: #1f4e79;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+footer p {
+    margin: 5px;
+}
+
+/* Mobile responsive design */
+@media screen and (max-width: 600px) {
+    main {
+        overflow-x: auto;
+    }
+
+    table {
+        min-width: 650px;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 13px;
+    }
+}
